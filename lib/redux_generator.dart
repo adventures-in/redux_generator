@@ -1,8 +1,7 @@
-/// Support for doing something awesome.
-///
-/// More dartdocs go here.
 library redux_generator;
 
-export 'src/redux_generator_base.dart';
+import 'package:build/build.dart';
 
-// TODO: Export any libraries intended for clients of this package.
+import 'src/redux_builder.dart';
+
+Builder reduxBuilder(BuilderOptions options) => ReduxBuilder();

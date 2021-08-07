@@ -1,0 +1,15 @@
+targets:
+  redux_generator:redux_generator:
+    builders:
+      redux_generator|reduxBuilder:
+        enabled: True
+
+builders:
+  reduxBuilder:
+    import: 'package:redux_generator/redux_generator.dart'
+    builder_factories: ['reduxBuilder']
+    build_extensions:
+      .dart:
+        - .g.dart
+    build_to: source
+    auto_apply: root_package
